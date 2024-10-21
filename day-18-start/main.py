@@ -60,14 +60,14 @@ tim.pensize(10)
 turtle.colormode(255)  # Allows us to use RGB colors
 def draw_spirograph(size_of_gap, radius):
     for i in range(int(360 / size_of_gap)):
-        r = (i * 10) % 255  # 动态变化颜色中的红色分量
-        g = (i * 20) % 255  # 动态变化颜色中的绿色分量
-        b = (i * 30) % 255  # 动态变化颜色中的蓝色分量
-        t.pencolor(r, g, b)  # 设置当前笔的颜色
-        t.circle(radius)     # 画一个圆
-        t.left(size_of_gap)  # 左转指定角度
+        r = (i * 10) % 255  
+        g = (i * 20) % 255  
+        b = (i * 30) % 255  
+        t.pencolor(r, g, b)  
+        t.circle(radius)     
+        t.left(size_of_gap)  
 
-# 调用函数，设置gap为10度，半径为100
+
 draw_spirograph(10, 100)
 # Finish the drawing
 turtle.done()
